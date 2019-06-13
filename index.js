@@ -11,19 +11,12 @@ function logShout(string) {
   console.log(string.toUpperCase());
 }
 
+
+function logWhisper(string) {
+  console.log(string.toLowerCase);
+}
+
 /*
-
-describe('logWhisper(string)', function() {
-  it('calls console.log() its one argument in all lowercase', function() {
-    const spy = expect.spyOn(console, 'log').andCallThrough()
-
-    logWhisper('HELLO')
-
-    expect(spy).toHaveBeenCalledWith('hello')
-
-    console.log.restore()
-  })
-})
 
 describe('sayHiToGrandma(string)', function() {
   it('returns "I can\'t hear you!" if `string` is lowercase', function() {
@@ -39,3 +32,13 @@ describe('sayHiToGrandma(string)', function() {
   })
 })
 */
+
+function sayHiToGrandma(string) {
+  if(string === string.toLowerCase()) {
+    return "I can't hear you!"
+  } else if(string === string.toUpperCase()) {
+    return "YES INDEED!"
+  } else if(string === "I love you, Grandma.") {
+    return "I love you, too."
+  }
+}
